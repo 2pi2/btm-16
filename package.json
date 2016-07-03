@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "btm demo",
   "main": "server.js",
+  "engines": {
+    "node": "6.2.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/2pi2/btm-16.git"
