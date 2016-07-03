@@ -1,8 +1,9 @@
 {
   "extends": "airbnb",
   "rules": {
-    "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
+    "quotes": [2, "single", {"avoidEscape": true}],
     "object-curly-spacing": [1, "never"],
-    "curly": [2, "multi"]
+    "curly": [2, "multi"],
+    "prefer-template": 0
     }
 }

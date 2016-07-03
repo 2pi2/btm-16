@@ -9,7 +9,7 @@ const ObjectID = mongodb.ObjectID;
 const CONTACTS_COLLECTION = 'contacts';
 
 const app = express();
-app.use(express.static(`$(__dirname)/public`));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 // Create a database variable outside of the database
@@ -38,7 +38,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, (err, database) => {
 
 // Generic error handler used by all endpoints.
 function handleError(res, reason, message, code) {
-  console.log(`ERROR: $(reason)`);
+  console.log('ERROR: ' + reason);
   res.status(code || 500).json({error: message});
 }
 
