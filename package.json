@@ -1,0 +1,39 @@
+{
+  "name": "btm-16",
+  "version": "1.0.0",
+  "description": "btm demo",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2pi2/btm-16.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "btm",
+    "react",
+    "d3",
+    "heroku"
+  ],
+  "author": "2pi2",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/2pi2/btm-16/issues"
+  },
+  "homepage": "https://github.com/2pi2/btm-16#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "less": "^2.7.1",
+    "mongodb": "^2.1.18",
+    "pug": "^2.0.0-beta3"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.1",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2"
+  }
+}
