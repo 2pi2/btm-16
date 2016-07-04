@@ -1,15 +1,21 @@
 /* eslint no-console: 0 */
 
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
+const pug = require('pug');
 const ObjectID = mongodb.ObjectID;
 
 const CONTACTS_COLLECTION = 'contacts';
 
 const app = express();
-app.use(express.static(__dirname + '/public'));
+
+app.set('view engine', pug);
+// app.use(express.static(__dirname + '/public'));
+app.get('/', (req, res) => {
+  res.render('public/index');
+});
 app.use(bodyParser.json());
 
 // Create a database variable outside of the database
